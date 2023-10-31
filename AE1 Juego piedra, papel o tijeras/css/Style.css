@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(224, 224, 7);
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+#finalJuego {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#jugador, #ordenador {
+  position: absolute;
+}
+
+#jugador {
+  left: 0;
+}
+
+#ordenador {
+  right: 0;
+}
+
+#puntosJugador, #puntosOrdenador, #seleccionJugador, #seleccionOrdenador {
+  position: absolute;
+}
+
+#puntosJugador, #seleccionJugador {
+  left: calc(50% - 150px); /* Adjust as needed */
+}
+
+#puntosOrdenador, #seleccionOrdenador {
+  right: calc(50% - 150px); /* Adjust as needed */
+}
+
+#resultado {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* This will center the element */
+}
+
+
+@media (max-width:480px) { /* Adjust breakpoint as needed */
+  #jugador, #ordenador, #puntosJugador, #puntosOrdenador, #seleccionJugador, #seleccionOrdenador, #resultado {
+      position:relative; 
+      left:auto; 
+      right:auto; 
+      margin:auto; 
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+  <div id="inicioJuego">
+    <input id="text" type="text" name="text" placeholder="Introduce tu nombre" onblur="resetValues()">
+    <button id ="button"onclick="validar()">Jugar</button>
+  </div>
+  <div id="seleccion">
+    <div id="jugador"></div> 
+    <div id ="ordenador"></div>
+  </div>
+  <div id="finalJuego">
+    <div id="puntosJugador"></div>
+    <div id="puntosOrdenador"></div>
+    <div id="seleccionOrdenador"></div>
+    <div id="seleccionJugador"></div>
+    <div id="resultado"></div>
+  </div>
+  <script src="Dinamica.js"></script>
+</body>
+</html>
